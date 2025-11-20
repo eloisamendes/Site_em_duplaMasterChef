@@ -52,11 +52,18 @@ h1 {
 
 .texto1 {
 
-font-family: sans-serif;
-font-size: 25px;
-white-space: pre-line; 
-color: #ffffff;
-z-index: 10;
+  position: absolute;        /* permite posicionar sobre a imagem */
+  top: 630px;                /* ajuste vertical: quanto menor, mais alto fica */
+  left: 50%;                 /* centraliza horizontalmente */
+  transform: translateX(-50%); /* centraliza de verdade */
+  font-family: sans-serif;
+  font-size: 25px;
+  white-space: pre-line; 
+  color: #ffffff;
+  z-index: 10;               /* garante que fique sobre a imagem */
+  text-align: center;        /* centraliza o texto */
+  width: 80%;                /* opcional: limitar a largura do texto */
+}
 
 }
 
