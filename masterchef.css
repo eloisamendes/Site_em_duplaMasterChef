@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    }
+
+/* Estilos gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  color: #000000;
+}
+
+h1 {
+  color:#990404;
+  position: absolute;
+  left: 65px;
+  top: 10px;
+}
+
+
+.desenho-mc {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  top: 10px;
+  left: 5px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img-fundo {
+ width: 100vw;     
+height: 850px;     
+object-fit: cover; 
+display: block;
+
+}
+
+.img-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  opacity: 0.8;
+}
+
+header {
+  background: #f8ecec;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+div {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  top: 0;
+  padding: 20px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  top: 0;
+  padding: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
