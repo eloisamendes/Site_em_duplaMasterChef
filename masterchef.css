@@ -32,15 +32,52 @@ h1 {
 .img-container {
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   overflow: hidden;
 }
+
+.titulo {
+  position: absolute;       
+  top: 310px;              
+  transform: translateX(33%); 
+  white-space: pre-line; 
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;         
+  z-index: 10;  
+  font-family: sans-serif;
+  font-size: 55px;
+}
+
+.texto1 {
+
+font-family: sans-serif;
+font-size: 25px;
+white-space: pre-line; 
+color: #ffffff;
+z-index: 10;
+
+}
+
+.texto2 {
+
+
+}
+
+.texto3 {
+
+
+}
+
+
 
 .img-fundo {
  width: 100vw;     
 height: 850px;     
 object-fit: cover; 
 display: block;
+margin-top: 0px;
 
 }
 
@@ -59,14 +96,10 @@ display: block;
 height: 50px;     
 object-fit: cover; 
 display: block;
-
+margin-top: 25px;
 
 
 }
-
-
-
-
 
 
 .img-trofeu {
@@ -80,27 +113,19 @@ header {
   text-align: center;
 }
 
-div {
-  position: absolute;
-  right: 0;
-  top: 50px;
-}
-
-nav ul {
-  list-style: none;
+nav {
+  position: absolute; 
+  top: 15px;         
+  right: 20px;    
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  top: 0;
-  padding: 20px;
+  gap: 20px; 
 }
 
 nav a {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
-  top: 0;
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 nav a:hover {
