@@ -47,11 +47,27 @@ display: block;
 .img-logo {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: 390px;
   opacity: 0.8;
 }
+
+.img-retangulo {
+
+ width: 150vw;     
+height: 50px;     
+object-fit: cover; 
+display: block;
+
+
+
+}
+
+
+
+
+
 
 .img-trofeu {
 width: 250px; 
