@@ -120,9 +120,9 @@ margin-top: 25px;
 }
 
 .mc-texto {
-    width: 55%;
+    width: 45;
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -132,13 +132,14 @@ margin-top: 25px;
 }
 
 .mc-premio img {
-    width: 130px;
+    width: 300px;
 }
 
 .mc-premio h3 {
     margin-top: 10px;
     color: #b30000;
     font-size: 20px;
+    margin-top: 1px;
 }
 
 .mc-info {
@@ -161,7 +162,7 @@ margin-top: 25px;
     text-align: center;
     color: #b30000;
     margin-top: 90px;
-    font-size: 32px;
+    font-size: 60px;
 }
 
 header {
