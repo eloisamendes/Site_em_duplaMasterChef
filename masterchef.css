@@ -325,6 +325,65 @@ nav a:hover {
     font-weight: bold;
 }
 
+
+.linha-vermelha {
+  width: 100%;
+  height: 2px;
+  background: #b30000 ;
+  margin-top: 100px; 
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+ .titulo-participantes {
+    text-align: center;
+    color: #b30000;
+    margin-top: 40px;
+    font-size: 32px;
+}
+.cards-participantes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px; /* aumentei */
+    margin: auto;
+}
+
+.card-participantes {
+    width: 260px; /* MENOR pra caber 3 */
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.card-participantes:hover {
+    transform: scale(1.03);
+}
+
+.foto-participantes {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-participantes h2 {
+    margin-top: 15px;
+    color: #b30000;
+    font-size: 20px;
+}
+
+.card-participantes p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 15px;
+}
+
 /*DEIXAR ESSA PARTE POR ULTIMO*/
 
 @media (max-width: 768px) {
@@ -339,14 +398,6 @@ nav a:hover {
   }
 }
 
-.linha-vermelha {
-  width: 100%;
-  height: 2px;
-  background: #b30000 ;
-  margin-top: 100px; 
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
 
 
 
