@@ -101,14 +101,14 @@ a.texto2:hover {
 .texto3 {
 
 font-family: 'Poppins', sans-serif ;
-color: rgb(0, 0, 0);
-margin-top: -55px;
+color: rgb(187, 174, 0);
+margin-top: -35px;
 position: absolute;  
+text-align: center;
+right: 32%;
 
 
 }
-
-
 
 
 .img-fundo {
