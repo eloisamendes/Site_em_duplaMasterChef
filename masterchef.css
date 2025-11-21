@@ -340,6 +340,7 @@ nav a:hover {
     color: #b30000;
     margin-top: 40px;
     font-size: 32px;
+    font-family: 'Poppins', sans-serif;
 }
 .cards-participantes {
     display: flex;
@@ -349,6 +350,7 @@ nav a:hover {
     padding: 40px;
     max-width: 1200px; /* aumentei */
     margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card-participantes {
