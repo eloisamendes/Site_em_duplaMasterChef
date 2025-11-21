@@ -277,6 +277,7 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card-jurado:hover {
