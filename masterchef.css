@@ -370,6 +370,15 @@ nav a:hover {
     margin: 10px 0 15px;
 }
 
+.titulo-provas {
+    text-align: center;
+    color: #b30000;
+    margin-top: 40px;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 /*DEIXAR ESSA PARTE POR ULTIMO*/
 
 @media (max-width: 768px) {
