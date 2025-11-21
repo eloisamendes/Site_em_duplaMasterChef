@@ -13,14 +13,24 @@ body {
 
 #main-title {
   position: absolute;
-  top: 50px;
-  left: 120px;
+  top: 45px;
+  left: 95px;
   color: #990404;
 }
 
+.tópicos {
+
+
+font-family: 'Poppins', sans-serif;
+margin-top: -10px;
+
+}
+
+
+
 
 .desenho-mc {
-  width: 85px;
+  width: 76px;
   height: auto;
   float: left;
   margin-right: 15px;
@@ -98,6 +108,18 @@ body {
   box-shadow: 0 8px 22px rgba(0,0,0,0.35);
   transform: translateX(-50%) scale(1.05);
 }
+
+.texto3 {
+
+font-family: 'Poppins', sans-serif ;
+color: rgb(206, 164, 26);
+margin-top: -35px;
+position: absolute;  
+text-align: center;
+right: 32%;
+
+}
+
 .img-fundo {
  width: 100vw;     
 height: 850px;     
@@ -294,6 +316,7 @@ nav a:hover {
     color: #b30000;
     margin-top: 40px;
     font-size: 32px;
+    font-family: 'Poppins', sans-serif;
 }
 .cards-participantes {
     display: flex;
@@ -303,6 +326,7 @@ nav a:hover {
     padding: 40px;
     max-width: 1200px; /* aumentei */
     margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card-participantes {
