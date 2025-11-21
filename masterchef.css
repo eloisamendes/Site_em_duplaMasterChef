@@ -65,17 +65,6 @@ h1 {
   width: 80%;                /* opcional: limitar a largura do texto */
 }
 
-}
-
-.texto2 {
-
-
-}
-
-.texto3 {
-
-
-}
 
 
 
@@ -126,7 +115,6 @@ nav {
   right: 20px;    
   display: flex;
   gap: 20px; 
-  font-size: 20px;
 }
 
 nav a {
@@ -139,3 +127,75 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+
+.titulo-jurados {
+    text-align: center;
+    color: #b30000;
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+.cards-jurados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card-jurado {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.card-jurado:hover {
+    transform: scale(1.03);
+}
+
+.foto-jurado {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-jurado h2 {
+    margin-top: 15px;
+    color: #b30000;
+    font-size: 20px;
+}
+
+.card-jurado p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 15px;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*DEIXAR ESSA PARTE POR ULTIMO*/
+
+@media (max-width: 768px) {
+  .cards-jurados {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-jurados {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
