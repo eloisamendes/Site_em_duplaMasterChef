@@ -38,16 +38,28 @@ body {
 
 .titulo {
   position: absolute;       
-  top: 310px;              
-  transform: translateX(33%); 
+  top: 130px;      
+  left: 50px;        
+  transform: none; 
   white-space: pre-line; 
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;         
   z-index: 10;  
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 55px;
+}
+
+.titulo {
+  /* NÃO ALTERAR posição/transform/width/left/top aqui */
+  /* Apenas ajustes visuais seguros: */
+  letter-spacing: -0.4px !important;   /* aperta letrinhas, leve */
+  word-spacing: 0px !important;        /* garante palavras juntas */
+  line-height: 1.02 !important;        /* aproxima linhas sem esmagar */
+  text-rendering: optimizeLegibility;  /* melhora visual de fontes */
+  -webkit-font-smoothing: antialiased;  /* melhora em webkit */
+  -moz-osx-font-smoothing: grayscale;   /* melhora em firefox */
 }
 
 .texto1 {
@@ -101,7 +113,7 @@ a.texto2:hover {
 .texto3 {
 
 font-family: 'Poppins', sans-serif ;
-color: rgb(187, 174, 0);
+color: rgb(230, 182, 27);
 margin-top: -35px;
 position: absolute;  
 text-align: center;
@@ -174,6 +186,7 @@ margin-top: 25px;
 .mc-premio {
     width: 40%;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mc-premio img {
@@ -193,6 +206,7 @@ margin-top: 25px;
     justify-content: center;
     gap: 80px;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mc-info div h2 {
@@ -206,6 +220,7 @@ margin-top: 25px;
 
 .titulos  {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     color: #b30000;
     margin-top: 90px;
     font-size: 60px;
@@ -245,6 +260,7 @@ nav a:hover {
     color: #b30000;
     margin-top: 40px;
     font-size: 32px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cards-jurados {
