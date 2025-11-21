@@ -7,7 +7,7 @@
 /* Estilos gerais */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff4f4;
+  background-color: #fdf6f6;
   color: #000000;
 }
 
@@ -67,6 +67,43 @@ body {
 
 
 
+a.texto2 {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 550px;
+
+  font-family: sans-serif; /* fonte bonita */
+  font-size: 25px;
+  color: white;
+  text-decoration: none; /* tira o sublinhado */
+  cursor: pointer;
+
+  /* CAIXINHA */
+  background-color: white;  /* fundo branco */
+  color: black;             /* texto preto normal */
+  padding: 15px 35px;
+  border: 4px solid white;  /* borda menor */
+  border-radius: 50px;      /* arredondado */
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25); /* sombra bonita */
+
+  white-space: pre-line;
+  text-align: center;
+  z-index: 10;
+
+  transition: 0.3s ease; /* transição suave */
+
+}
+
+a.texto2:hover {
+  background-color: rgb(192, 20, 8); /* fundo vermelho */
+  border-color: white;                /* borda branca */
+  color: white;                       /* texto branco */
+  box-shadow: 0 6px 22px rgba(0,0,0,0.35); /* sombra maior ao passar o mouse */
+  transform: translateX(-50%) scale(1.05); 
+}
+
 
 .img-fundo {
  width: 100vw;     
@@ -82,8 +119,9 @@ margin-top: 0px;
   top: 50%;
   left: 75%;
   transform: translate(-50%, -50%);
-  width: 390px;
+  width: 430px;
   opacity: 10a;
+  margin-top: -90px;
 }
 
 .img-retangulo {
