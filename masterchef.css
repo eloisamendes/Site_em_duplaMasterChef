@@ -38,16 +38,28 @@ body {
 
 .titulo {
   position: absolute;       
-  top: 310px;              
-  transform: translateX(33%); 
+  top: 130px;      
+  left: 50px;        
+  transform: none; 
   white-space: pre-line; 
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;         
   z-index: 10;  
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 55px;
+}
+
+.titulo {
+  /* NÃO ALTERAR posição/transform/width/left/top aqui */
+  /* Apenas ajustes visuais seguros: */
+  letter-spacing: -0.4px !important;   /* aperta letrinhas, leve */
+  word-spacing: 0px !important;        /* garante palavras juntas */
+  line-height: 1.02 !important;        /* aproxima linhas sem esmagar */
+  text-rendering: optimizeLegibility;  /* melhora visual de fontes */
+  -webkit-font-smoothing: antialiased;  /* melhora em webkit */
+  -moz-osx-font-smoothing: grayscale;   /* melhora em firefox */
 }
 
 .texto1 {
@@ -56,7 +68,7 @@ body {
   top: 630px;                /* ajuste vertical: quanto menor, mais alto fica */
   left: 50%;                 /* centraliza horizontalmente */
   transform: translateX(-50%); /* centraliza de verdade */
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 25px;
   white-space: pre-line; 
   color: #ffffff;
@@ -66,14 +78,13 @@ body {
 }
 
 
-.texto2 {
+a.texto2 {
   position: absolute;
   top: 200px;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 550px;
-
-  font-family: sans-serif !important;
+  font-family: 'Poppins', sans-serif;
   font-size: 25px;
   color: black;
   text-decoration: none;
@@ -92,12 +103,26 @@ body {
   transition: 0.3s ease;
 }
 
-.texto2:hover {
+a.texto2:hover {
   background-color: rgb(192, 20, 8);
   color: white;
   box-shadow: 0 8px 22px rgba(0,0,0,0.35);
   transform: translateX(-50%) scale(1.05);
 }
+
+.texto3 {
+
+font-family: 'Poppins', sans-serif ;
+color: rgb(230, 182, 27);
+margin-top: -35px;
+position: absolute;  
+text-align: center;
+right: 32%;
+
+
+}
+
+
 .img-fundo {
  width: 100vw;     
 height: 850px;     
@@ -155,11 +180,13 @@ margin-top: 25px;
     text-align: left;
     font-size: 18px;
     line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mc-premio {
     width: 40%;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mc-premio img {
@@ -171,6 +198,12 @@ margin-top: 25px;
     color: #b30000;
     font-size: 20px;
     margin-top: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.span {
+ font-size: 30px;
+
 }
 
 .mc-info {
@@ -178,6 +211,8 @@ margin-top: 25px;
     justify-content: center;
     gap: 80px;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+     left: 30%;
 }
 
 .mc-info div h2 {
@@ -186,14 +221,15 @@ margin-top: 25px;
 }
 
 .mc-info div span {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .titulos  {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     color: #b30000;
     margin-top: 90px;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 header {
@@ -223,13 +259,12 @@ nav a:hover {
 }
 
 
-
-
 .titulo-jurados {
     text-align: center;
     color: #b30000;
     margin-top: 40px;
     font-size: 32px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cards-jurados {
@@ -248,6 +283,7 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: 0.2s;
+     font-family: 'Poppins', sans-serif;
 }
 
 .card-jurado:hover {
