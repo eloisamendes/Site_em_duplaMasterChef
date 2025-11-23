@@ -341,13 +341,13 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 25px;
     padding: 40px;
-    max-width: 1200px; /* aumentei */
+    max-width: 1200px; 
     margin: auto;
     font-family: 'Poppins', sans-serif;
 }
 
 .card-participantes {
-    width: 260px; /* MENOR pra caber 3 */
+    width: 260px; 
     background: white;
     padding: 20px;
     border-radius: 15px;
@@ -386,6 +386,84 @@ nav a:hover {
     font-size: 32px;
     font-family: 'Poppins', sans-serif;
 }
+
+.cards-prova {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card-prova {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-prova:hover {
+    transform: scale(1.03);
+}
+
+.card-prova img {
+    width: 100%;
+    height: 180px;      
+    object-fit: cover;   
+    border-radius: 12px;
+    display: block;       
+}
+
+.card-prova h2 {
+    margin-top: 15px;
+    color: #b30000;
+    font-size: 20px;
+}
+
+.card-prova p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 15px;
+}
+
+/* botão q vai volta pro topo */
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffffff; 
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.btn-topo img {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.btn-topo:hover {
+    transform: scale(1.1);
+    background: #ffffff;
+}
+
+
+.titulo-receitas {
+    text-align: center;
+    color: #b30000;
+    margin-top: 40px;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 
 /*DEIXAR ESSA PARTE POR ULTIMO*/
