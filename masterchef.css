@@ -7,7 +7,7 @@
 /* Estilos gerais */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fdf6f6;
+  background-color: rgb(255, 255, 255);
   color: #000000;
 }
 
@@ -19,8 +19,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.tópicos {
+.icon {
 
+width: 90px;
+
+}
+
+.tópicos {
 
 font-family: 'Poppins', sans-serif;
 margin-top: -10px;
@@ -48,7 +53,7 @@ margin-top: -10px;
 .titulo {
 
   position: absolute;       
-  top: 135px; 
+  top: 120px; 
   margin-top: -20px;             
   transform: none; 
   white-space: pre-line; 
@@ -56,30 +61,33 @@ margin-top: -10px;
   font-weight: bold;
   color: #ffffff;         
   z-index: 10;  
-  font-family: sans-serif;
   font-size: 58px; 
-  right: 1110px;
+  right: 900px;
   line-height: 1.02 !important;      /* linhas mais próximas, sem esmagar */
   letter-spacing: -0.7px !important; /* letras levemente mais juntas */
   word-spacing: -2px !important;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 
 
 }
 
 .texto1 {
 
-  position: absolute;        /* permite posicionar sobre a imagem */
-  top: 630px;                /* ajuste vertical: quanto menor, mais alto fica */
-  left: 50%;                 /* centraliza horizontalmente */
-  transform: translateX(-50%); /* centraliza de verdade */
+  position: absolute;
+  top: 630px;
+  left: 50%;
+  transform: translateX(-50%);
+  
   font-family: sans-serif;
   font-size: 25px;
-  white-space: pre-line; 
+  line-height: 1.1;        /* <-- ISSO AQUI deixa mais apertado */
+  
+  white-space: pre-line;
   color: #ffffff;
-  z-index: 10;               /* garante que fique sobre a imagem */
-  text-align: center;        /* centraliza o texto */
-  width: 80%;                /* opcional: limitar a largura do texto */
+  z-index: 10;
+  text-align: center;
+  width: 80%;
+
 }
 
 
@@ -106,7 +114,7 @@ margin-top: -10px;
   text-align: center;
   z-index: 10;
   transition: 0.3s ease;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .texto2:hover {
@@ -114,7 +122,7 @@ margin-top: -10px;
   color: white;
   box-shadow: 0 8px 22px rgba(0,0,0,0.35);
   transform: translateX(-50%) scale(1.05);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .texto3 {
@@ -124,7 +132,7 @@ color: rgb(206, 164, 26);
 margin-top: -35px;
 position: absolute;  
 text-align: center;
-right: 32%;
+right: 28%;
 
 }
 
@@ -140,12 +148,11 @@ margin-top: 0px;
 .img-logo {
   position: absolute;
   top: 52%;
-  left: auto;
   transform: translateY(-50%);
   width: 430px;
   opacity: 10a;
-  margin-top: -90px;
-  right: 300px;
+  margin-top: -120px;
+  right: 230px;
   left: auto;
 }
 
@@ -156,7 +163,6 @@ height: 50px;
 object-fit: cover; 
 display: block;
 margin-top: 25px;
-
 
 }
 
@@ -185,8 +191,9 @@ margin-top: 25px;
 .mc-texto {
     width: 45;
     text-align: left;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mc-premio {
@@ -196,15 +203,33 @@ margin-top: 25px;
 }
 
 .mc-premio img {
-    width: 300px;
+    width: 400px;
+    left: -9px;
+    position: relative;
+    top: 25px;
 }
 
 .mc-premio h3 {
-    margin-top: 10px;
-    color: #b30000;
-    font-size: 20px;
     margin-top: 1px;
+    color: #b30000;
+    font-size: 27px;
     font-family: 'Poppins', sans-serif;
+
+    position: relative; 
+    right: -25px; /* valores negativos empurram PRA DIREITA */
+    top: -30px;
+
+}
+
+.mc-premio p {
+
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    position: relative; 
+    right: -25px; /* valores negativos empurram PRA DIREITA */
+    top: -30px;
+
 }
 
 .mc-info {
@@ -216,20 +241,20 @@ margin-top: 25px;
 
 .mc-info div h2 {
     color: #b30000;
-    font-size: 28px;
+    font-size: 34px;
     font-family: 'Poppins', sans-serif;
 }
 
 .mc-info div span {
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
-.titulos  {
+.titulos {
     text-align: center;
     color: #b30000;
     margin-top: 90px;
-    font-size: 70px;
+    font-size: 35px !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -246,27 +271,32 @@ nav {
   right: 20px;    
   display: flex;
   gap: 20px; 
+  margin-top: -9px;
+  font-size: 17px;
 }
 
 nav a {
-  color: #000000;
+    color: #000000;
   text-decoration: none;
   font-weight: bold;
   padding: 10px 15px;
+
+  display: inline-block; /* ESSENCIAL PARA FUNCIONAR ANIMAÇÃO */
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+ transform: translateY(-3px) scale(1.05);
+text-decoration: underline;
+    
 }
-
-
 
 
 .titulo-jurados {
     text-align: center;
     color: #b30000;
     margin-top: 40px;
-    font-size: 32px;
+    font-size: 35px !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -320,7 +350,7 @@ nav a:hover {
 
 
 .linha-vermelha {
-  width: 100%;
+  width: 120%;
   height: 2px;
   background: #b30000 ;
   margin-top: 100px; 
@@ -332,7 +362,7 @@ nav a:hover {
     text-align: center;
     color: #b30000;
     margin-top: 40px;
-    font-size: 32px;
+    font-size: 35px !important;
     font-family: 'Poppins', sans-serif;
 }
 .cards-participantes {
@@ -383,7 +413,7 @@ nav a:hover {
     text-align: center;
     color: #b30000;
     margin-top: 40px;
-    font-size: 32px;
+    font-size: 35px !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -460,10 +490,55 @@ nav a:hover {
     text-align: center;
     color: #b30000;
     margin-top: 40px;
-    font-size: 32px;
+    font-size: 35px !important;
     font-family: 'Poppins', sans-serif;
 }
 
+.foto-receita {
+    width: 60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.cards-salgados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards lado a lado */
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto 50px auto; /* espaço abaixo */
+
+    
+}
+
+.cards-doces {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards lado a lado */
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto; /* centralizado */
+}
+
+
+.card-receita,
+.card-receita2 {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.card-receita:hover,
+.card-receita2:hover {
+    transform: scale(1.05);
+    transition: 0.25s ease;
+}
 
 
 /*DEIXAR ESSA PARTE POR ULTIMO*/
@@ -479,7 +554,3 @@ nav a:hover {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
