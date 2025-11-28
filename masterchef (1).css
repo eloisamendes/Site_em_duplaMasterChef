@@ -11,10 +11,6 @@ body {
   color: #000000;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 #main-title {
   position: absolute;
   top: 35px;
