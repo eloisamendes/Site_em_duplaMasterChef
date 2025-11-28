@@ -364,7 +364,6 @@ text-decoration: underline;
   flex: 0 0 100%;   /* ESSENCIAL PARA NÃO ENCOLHER NO FLEX */
 }
 
-
  .titulo-participantes {
     text-align: center;
     color: #b30000;
