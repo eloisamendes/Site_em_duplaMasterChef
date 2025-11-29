@@ -7,7 +7,7 @@
 /* Estilos gerais */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: #f8ecec;
   color: #000000;
 }
 
@@ -545,6 +545,16 @@ text-decoration: underline;
     transform: scale(1.05);
     transition: 0.25s ease;
 }
+
+.titulo-convidada {
+    text-align: center;
+    color: #b30000;
+    margin-top: 40px;
+    font-size: 35px !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 
 /*DEIXAR ESSA PARTE POR ULTIMO*/
