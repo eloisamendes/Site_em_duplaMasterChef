@@ -513,13 +513,13 @@ text-decoration: underline;
 
 .card-receita2 h3 {
     margin-top: 15px;
-    color: #000000;
+    color: #555;
     font-size: 15px;
 }
 
 .card-receita h3 {
     margin-top: 15px;
-    color: #000000;
+    color: #555;
     font-size: 15px;
 }
 
@@ -572,6 +572,7 @@ text-decoration: underline;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: transform .25s ease;
     position: relative;
+    color:#555;
 }
 
 .card-receita:hover,
@@ -585,12 +586,14 @@ text-decoration: underline;
     overflow: hidden;
     opacity: 0;
     transition: max-height .5s ease, opacity .3s ease;
+    color:#555
 }
 
 .card-receita:hover .descricao,
 .card-receita2:hover .descricao {
     max-height: 1000px;
     opacity: 1;
+    color:#555
 }
 
 .titulo-convidada {
@@ -602,17 +605,212 @@ text-decoration: underline;
 }
 
 
-
-/*DEIXAR ESSA PARTE POR ULTIMO*/
-
-@media (max-width: 768px) {
-  .cards-jurados {
-    grid-template-columns: 1fr 1fr;
-  }
+.entrevista {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-  .cards-jurados {
-    grid-template-columns: 1fr;
-  }
+.img-convidada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-convidada img {
+    width: 260px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+}
+
+.img-convidada img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.40);
+    filter: brightness(1.07);
+}
+
+.img-convidada h2 {
+    margin-top: 10px;
+    color: #b30000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-entrevista {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 0 0 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card-entrevista p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #555 ;
+}
+
+.card-entrevista:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.20);
+}
+
+.link-vermelho {
+  color: #b30000;
+  text-decoration: none;
+}
+
+.link-vermelho:hover {
+  color: darkred;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #b30000;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.25);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-masterchef p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.footer-devs h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-devs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-devs li {
+    margin-bottom: 8px;
+}
+
+.footer-devs a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-devs a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* ===========================
+      RESPONSIVIDADE GERAL
+   =========================== */
+
+@media (max-width: 900px) {
+
+    /* ----- SEÇÕES EM COLUNA ----- */
+    .entrevista,
+    .cards-salgados,
+    .cards-doces,
+    .cards-participantes,
+    .cards-provas {
+        flex-direction: column !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 25px !important;
+    }
+
+    /* ----- IMAGEM DA ENTREVISTA ----- */
+    .img-convidada img,
+    .img-container img {
+        width: 70% !important;
+        max-width: 280px !important;
+    }
+
+    /* ----- CARD DA ENTREVISTA ----- */
+    .card-entrevista {
+        flex: none !important;
+        width: 90% !important;
+        padding: 20px !important;
+    }
+
+    /* ----- CARDS DE RECEITA ----- */
+    .card-receita,
+    .card-receita2 {
+        width: 90% !important;
+        max-width: 350px !important;
+    }
+
+    /* ----- TEXTO ----- */
+    .card-entrevista p,
+    .descricao,
+    .ingredientes,
+    .preparo {
+        font-size: 15px !important;
+        text-align: left !important;
+    }
+
+    /* ----- IMAGENS REDONDAS DAS RECEITAS ----- */
+    .foto-receita {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* ----- ENTREVISTA ----- */
+    .entrevista {
+        padding: 20px !important;
+        gap: 20px !important;
+    }
+
+    /* ----- IMAGEM DA ENTREVISTA ----- */
+    .img-convidada img,
+    .img-container img {
+        width: 80% !important;
+        max-width: 240px !important;
+    }
+
+    /* ----- CARD ----- */
+    .card-entrevista {
+        width: 95% !important;
+        padding: 18px !important;
+    }
+
+    /* ----- RECEITAS ----- */
+    .card-receita,
+    .card-receita2 {
+        width: 95% !important;
+    }
 }
