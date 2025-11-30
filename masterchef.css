@@ -491,7 +491,6 @@ text-decoration: underline;
     background: #ffffff;
 }
 
-
 .titulo-receitas {
     text-align: center;
     color: #b30000;
@@ -500,50 +499,98 @@ text-decoration: underline;
     font-family: 'Poppins', sans-serif;
 }
 
+.card-receita2 h2 {
+    margin-top: 15px;
+    color: #b30000;
+    font-size: 20px;
+}
+
+.card-receita h2 {
+    margin-top: 15px;
+    color: #b30000;
+    font-size: 20px;
+}
+
+.card-receita2 h3 {
+    margin-top: 15px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.card-receita h3 {
+    margin-top: 15px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.ingredientes,
+.preparo {
+    font-size: 14px;      
+    line-height: 1.4;
+    width: 90%;
+    margin: 0 auto;     
+    text-align: left;    
+}
+
+
+
 .foto-receita {
-    width: 60px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    margin: 0 auto;
+}
 
+.cards-salgados,
+.cards-doces {
+    display: grid;
+    justify-content: center;   
+    align-items: start;
+    gap: 25px;
+    margin: 0 auto 50px auto;
 }
 
 .cards-salgados {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards lado a lado */
-    gap: 25px;
-    max-width: 1100px;
-    margin: 0 auto 50px auto; /* espaço abaixo */
-
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1000px;
 }
 
 .cards-doces {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards lado a lado */
-    gap: 25px;
-    max-width: 900px;
-    margin: 0 auto; /* centralizado */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 700px;
 }
-
 
 .card-receita,
 .card-receita2 {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
+    width: 300px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    transition: 0.2s;
-    font-family: 'Poppins', sans-serif;
-    
+    transition: transform .25s ease;
+    position: relative;
 }
 
 .card-receita:hover,
 .card-receita2:hover {
     transform: scale(1.05);
-    transition: 0.25s ease;
+}
+
+.card-receita .descricao,
+.card-receita2 .descricao {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .5s ease, opacity .3s ease;
+}
+
+.card-receita:hover .descricao,
+.card-receita2:hover .descricao {
+    max-height: 1000px;
+    opacity: 1;
 }
 
 .titulo-convidada {
@@ -553,7 +600,6 @@ text-decoration: underline;
     font-size: 35px !important;
     font-family: 'Poppins', sans-serif;
 }
-
 
 
 
